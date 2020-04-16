@@ -17,8 +17,6 @@ br.submit()
 headers = requests.utils.default_headers()
 headers.update({'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'})
 
-#url = 'http://eet24virtual.ddns.net/moodle/'
-#request = requests.get(url, headers)
 soup = BeautifulSoup(br.response(), 'html.parser')
 
 region = soup.find(class_='block_calendar_upcoming')

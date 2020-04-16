@@ -12,8 +12,8 @@ br = mechanize.Browser()
 br.set_cookiejar(cj)
 br.open("http://eet24virtual.ddns.net/moodle/my/")
 br.select_form(nr=1)
-br.form['username'] = '95513580'
-br.form['password'] = 'AV_eet24*95513580'
+br.form['username'] = '<username>'
+br.form['password'] = '<password>'
 br.submit()
 
 headers = requests.utils.default_headers()
